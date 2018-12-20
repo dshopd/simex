@@ -1,9 +1,9 @@
 # start_dev
 #### Front-end developing start template
 
-Author: [hattam](https://hattam.ru)
+Author: julian
 
-![alt](https://raw.githubusercontent.com/hattamsoyunov/start_dev/master/app/img/start_dev_preview.jpg)
+
 
 ## How to use
 
