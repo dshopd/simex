@@ -1,0 +1,30 @@
+* {
+	box-sizing: border-box;
+}
+
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 14px;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+
+	@screen md {
+		font-size: 16px;
+	}
+}
+
+body {
+	@apply .font-sans;
+	font-size: 1rem;
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+}
+
+[v-cloak], [savefrom_lm] + span {
+	display: none !important;
+}

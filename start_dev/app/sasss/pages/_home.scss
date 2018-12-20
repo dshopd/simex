@@ -1,0 +1,21 @@
+@screen xl {
+	.home-features-tab-body {
+		background-image: linear-gradient(to top, config('colors.grey-lighter'), white);
+	}
+}
+
+// .clocks-title:before,
+// .clocks-title:after {
+// 	content: '';
+//     position: absolute;
+//     left: 50%;
+//     margin-left: -10px;
+//     bottom: -20px;
+//     border: 10px solid transparent;
+//     border-top: 10px solid rgba(255, 255, 255, .5);
+// }
+
+// .clocks-title:after {
+// 	border-top: 10px solid #295ba1;
+// 	bottom: -19px;
+// }

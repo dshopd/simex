@@ -1,0 +1,62 @@
+@tailwind preflight;
+@tailwind components;
+
+@import 'components/app';
+@import 'components/base';
+@import 'components/utilities';
+
+
+@import 'pages/home';
+ 
+@tailwind utilities;
+
+
+.content  { 
+    h1 {
+        @apply font-bold uppercase text-8 pb-6  border-grey-light border-b mb-6;
+    }
+    a {
+    	@apply text-4 text-blue no-underline;
+    	&:hover {
+    		@apply underline; 
+    	}
+    }
+    &__linck {
+    	a {
+    		@apply mb-2 block;
+    	}
+    }
+    h2 {
+    	@apply text-8 font-medium mb-4;
+    }
+    h3 {
+    	@apply text-6 font-medium mb-4;
+    }
+    h4 {
+    	@apply text-5 font-medium mb-4;
+    }
+    h5 {
+    	@apply text-4 font-medium mb-4;
+    }
+    h6 {
+    	@apply text-3 font-medium mb-4;
+    }
+    p {
+    	@apply text-4 mb-4 text-grey;
+    }
+    ul {
+    	list-style-type: disc;
+    	@apply pl-4;
+    	
+    	li {
+    		@apply text-4 mb-2 text-grey ; 
+    	}
+    }
+    ol {
+    	list-style-type: decimal;
+    	@apply pl-4;
+    	li {
+    		@apply text-4 mb-2 text-grey ; 
+    	}
+    }
+}

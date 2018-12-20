@@ -1,0 +1,30 @@
+.center {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.center-x {
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.center-y {
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+@responsive {
+	.gt-grey-light-white {
+		background-image: linear-gradient(to top, config('colors.grey-light'), config('colors.white'));
+	}
+
+	.gt-grey-lighter-white {
+		background-image: linear-gradient(to top, config('colors.grey-lighter'), config('colors.white'));
+	}
+}
+
+.rotate-45 {
+	transform-origin: center;
+	transform: rotate(45deg);
+}
