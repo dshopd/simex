@@ -10,6 +10,18 @@
  
 @tailwind utilities;
 
+.header-faq {
+    background: url("../img/faq-bg.jpg") no-repeat center center;
+    background-size: cover;
+}
+.header-news {
+    background: url("../img/news-bg.jpg") no-repeat center center;
+    background-size: cover; 
+}
+.header-progect {
+    background: url("../img/progect-bg.jpg") no-repeat center center;
+    background-size: cover; 
+}
 
 .content  { 
     h1 {
@@ -59,4 +71,76 @@
     		@apply text-4 mb-2 text-grey ; 
     	}
     }
+}
+.news-filter-active {
+    @apply border-green;
+    i {
+        @apply text-green;
+    }
+    p {
+        @apply text-green;
+    }
+    .news-filter-tr {
+        @apply block;
+    }
+}
+
+.news-item {
+    &:hover {
+        @apply bg-green shadow-none;
+        p {
+            @apply text-white;
+        }
+        h3 {
+            @apply text-white;
+        }
+        span {
+            @apply text-white border-white;
+        }
+        .news-data {
+            @apply bg-green;
+            i {
+                @apply text-white;
+            }
+            span {
+                @apply text-white;
+            }
+        }
+    }
+}
+.bg-form-blue {
+    background: url("../img/form-news-bg.jpg") no-repeat center center;
+    background-size: cover;
+}
+.icon-form-logo-text {
+    width: 68px;
+    height: 68px;
+    background: url("../img/icon-form-logo-text.png") no-repeat center center;
+    background-size: cover;
+    display: inline-block;
+}
+.icon-form {
+    width: 26px;
+    height: 13px;
+    background: url("../img/icon-mail.png") no-repeat center center;
+    background-size: cover;
+    display: block;
+    top: 18px;
+    left: 15px;
+}
+
+.progect-item {
+  background: #f7f7f7;
+}
+.star {
+  width: 45px;
+  right: 15px; 
+  top: 12px;
+}
+.icon-progect-user {
+  width: 16px;
+  height: 17px;
+  display: inline-block;
+  background: url("../img/icon-progect-user.png") no-repeat center center;
+  background-size: cover;
 }
