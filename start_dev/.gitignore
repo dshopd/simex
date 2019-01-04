@@ -7,8 +7,7 @@ node_modules/
 # Optional npm cache directory
 .npm
 
-# Css files
-app/css/
+
 
 # git
 .git/
