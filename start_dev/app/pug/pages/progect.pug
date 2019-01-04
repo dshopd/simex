@@ -21,25 +21,25 @@
 		.bg-grey-lighter.mb-12
 			.container
 				.flex.flex-wrap.justify-between.pt-4.mb-12(class="md:w-3/4 w-full" , style="margin: 0 auto;")
-					.news-filter-active.news-filter.border-grey.relative.text-center.cursor-pointer.border-b-2(class="w-1/4")
-						.block.bg-grey-lighter.pb-4.z-10.relative
+					.news-filter-active.news-filter.border-grey-light.relative.text-center.cursor-pointer.border-b-2(class="w-1/4")
+						.block.bg-grey-lighter.pb-4.z-10.relative.border-solid.border-r.border-grey-light
 							i.fas.fa-th.text-9.mb-1.text-grey
 							p.text-center.text-grey.font-medium All Projects
 						.news-filter-tr.hidden.absolute.center-x.w-6.h-6.z-1(style="bottom: -0.8rem;") 
 							.news-filter-tr-tr.absolute.pin.bg-green.rotate-45
-					.news-filter.border-grey.relative.text-center.cursor-pointer.border-b-2(class="w-1/4")
-						.block.bg-grey-lighter.pb-4.z-10.relative
+					.news-filter.border-grey-light.relative.text-center.cursor-pointer.border-b-2(class="w-1/4")
+						.block.bg-grey-lighter.pb-4.z-10.relative.border-solid.border-r.border-grey-light
 							i.fas.fa-globe.text-9.mb-1.text-grey 
 							p.text-center.text-grey.font-medium Go to Public 
 						.news-filter-tr.hidden.absolute.center-x.w-6.h-6.z-1(style="bottom: -0.8rem;") 
 							.news-filter-tr-tr.absolute.pin.bg-green.rotate-45
-					.news-filter.border-grey.relative.text-center.cursor-pointer.border-b-2(class="w-1/4")
-						.block.bg-grey-lighter.pb-4.z-10.relative
+					.news-filter.border-grey-light.relative.text-center.cursor-pointer.border-b-2(class="w-1/4")
+						.block.bg-grey-lighter.pb-4.z-10.relative.border-solid.border-r.border-grey-light
 							i.fas.fa-handshake.text-9.mb-1.text-grey 
 							p.text-center.text-grey.font-medium Investments 
 						.news-filter-tr.hidden.absolute.center-x.w-6.h-6.z-1(style="bottom: -0.8rem;") 
 							.news-filter-tr-tr.absolute.pin.bg-green.rotate-45
-					.news-filter.border-grey.relative.text-center.cursor-pointer.border-b-2(class="w-1/4")
+					.news-filter.border-grey-light.relative.text-center.cursor-pointer.border-b-2(class="w-1/4")
 						.block.bg-grey-lighter.pb-4.z-10.relative
 							i.fas.fa-percent.text-9.mb-1.text-grey 
 							p.text-center.text-grey.font-medium Token Sale 
@@ -47,41 +47,130 @@
 							.news-filter-tr-tr.absolute.pin.bg-green.rotate-45
 		.bg-white.pb-12
 			.container
-				.flex.flex-wrap.justify-between.shadow-md.p-px.h-64.bg-grey-lighter
-					.relative(class="w-30/100")
+				.flex.flex-wrap.justify-between
+					.block(class="w-full md:mb-0 mb-4 md:w-30/100")
+						input.pl-2.text-4.border-grey.border-solid.border.rounded(class="w-full h-12 ",type="text", placeholder="Name")
+					.block(class="w-full md:mb-0 mb-4 md:w-30/100")
+						select.pl-2.text-4.border-grey.border-solid.border.rounded(class="w-full h-12 ")
+							option(value="volvo") Volvo
+							option(value="volvo") Volvo
+					.block(class="w-full md:mb-0 mb-4 md:w-30/100")
+						a(href="#").block.w-full.h-12.py-3.border.border-white.rounded.leading-normal.uppercase.text-center.font-bold.bg-blue.text-white.whitespace-no-wrap.no-underline(class="hover:bg-blue-light ")
+							i.fas.fa-search.mr-2
+							| Search
+		.bg-white.pb-12
+			.container
+				.flex.flex-wrap.justify-between.shadow-md.p-px.bg-grey-lighter.mb-8
+					.relative(class="w-full md:w-30/100 h-48 md:h-auto")
 						img.pin.absolute.m-auto(src="img/progect-img.png")
 						.star.text-4.text-white.text-center.bg-green.pt-1.pb-1.font-bold.rounded-sm.absolute 4.5
-					.bg-white.p-4(class="w-70/100")
+					.bg-white.p-4(class="w-full md:w-70/100")
 						.flex.flex-wrap.items-center
 							h4.mr-2.text-6.font-bold РЕАКТИВНЫЙ АНГЛИЙСКИЙ
-							.flex.flex-wrap.justify-center
+							.flex.flex-wrap.justify-left(class="md:w-auto w-full")
 								i.fas.fa-star.text-orange.mr-1
 								i.fas.fa-star.text-orange.mr-1
 								i.fas.fa-star.text-orange.mr-1
 								i.fas.fa-star.text-orange.mr-1
 								i.fas.fa-star-half-alt.text-orange.mr-1
-						p.text-4.font-light.text-grey-dark.mb-4 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor mollis
-							br
-							| tortor, a tempor quam facilisis vitae. Nam in posuere augue. Morbi sit amet augue sceler
-							br
-							| isque, iaculis diam a, egestas est.
-						.flex.flex-wrap.border-grey-light.border-solid.border.rounded.mb-4(class="w-4/5")
-							.py-3.border-r.border-grey-light.border-solid.bg-grey-lighter(class="w-1/3")
-								p.text-center.text-4.font-bold Raised:
-									span.text-grey-dark.font-normal  14300 RUB 
-							.py-3.border-r.border-grey-light.border-solid(class="w-1/3")
-								p.text-center.text-4.font-bold Share Price:
-									span.text-grey-dark.font-normal  100 RUB
-							.py-3.border-r.border-grey-light.border-solid.bg-grey-lighter(class="w-1/3")
-								p.text-center.text-4.font-bold
+						p.text-4.font-light.text-grey-dark.mb-4.overflow-hidden(class="xl:h-24 md:h-12 h-12") Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor mollis tortor, a tempor quam facilisis vitae. Nam in posuere augue. Morbi sit amet augue sceler isque, iaculis diam a, egestas est. lor sit amet, consectetur adipiscing elit. Etiam porttitor mollis tortor, a tempor quam facilisis vitae. Nam in posuere augue. Morbi sit amet augue sceler isque, iaculis diam a, egestas est. lor sit amet, consectetur adipiscing elit. Etiam porttitor mollis tortor, a tempor quam facilisis vitae. Nam in posuere augue. Morbi sit amet augue sceler isque, iaculis diam a, egestas est.
+						.flex.flex-wrap.border-grey-light.border-solid.border.rounded.mb-4(class="w-full md:w-full xl:w-4/5")
+							.py-3.border-r.border-grey-light.border-solid.bg-grey-lighter(class="w-full text-left md:w-1/3")
+								p.text-4.font-bold.pl-1(class="md:text-left xl:text-center text-left") Raised:  
+									span.text-grey-dark.font-normal(class="md:block  xl:inline-block")  14300 RUB 
+							.py-3.border-r.border-grey-light.border-solid(class="w-full text-left md:w-1/3")
+								p.text-4.font-bold.pl-1(class="md:text-left xl:text-center text-left") Share Price:  
+									span.text-grey-dark.font-normal(class="md:block  xl:inline-block")   100 RUB 
+							.py-3.border-r.border-grey-light.border-solid.bg-grey-lighter(class="w-full text-left md:w-1/3")
+								p.text-4.font-bold.pl-1(class="md:text-left xl:text-center text-left")
 									i.icon-progect-user.mr-2
-									| 9 
-									span.text-grey-dark.font-normal  investors
-						.flex.flex-wrap.justify-between
-							.h-6.relative(class="w-1/2")
-								.h-full
-
-							.block(class="w-2/5")
+									span.text-grey-dark.font-normal(class="md:block  xl:inline-block")   9  investors
+						.flex.flex-wrap.justify-between.items-center(class="w-full md:w-full xl:w-4/5")
+							.h-6.relative(class="w-1/2 md:w-1/2 w-full md:mb-0 mb-4")
+								.h-full.border.rounded-lg.border-solid.border-grey.bg-grey-lighter.pt-px.pl-px.pr-px.pb-px.relative
+									.h-full.rounded-lg.border-solid.bg-grey-lighter.liner(style="width: 10.36%;")
+									span.absolute.pin-r.text-2.pin-t.pr-2.font-medium.text-grey 10.36 %
+							.block(class="w-2/5 md:w-2/5 w-full")
+								a.block.py-4.rounded.leading-normal.uppercase.text-center.font-bold.bg-blue.text-white.whitespace-no-wrap.no-underline(class="hover:bg-blue-light", href="#") Invest
+				.flex.flex-wrap.justify-between.shadow-md.p-px.bg-grey-lighter.mb-8
+					.relative(class="w-full md:w-30/100 h-48 md:h-auto")
+						img.pin.absolute.m-auto(src="img/progeict-img2.png")
+						.star.text-4.text-white.text-center.bg-green.pt-1.pb-1.font-bold.rounded-sm.absolute 3.5
+					.bg-white.p-4(class="w-full md:w-70/100")
+						.flex.flex-wrap.items-center
+							h4.mr-2.text-6.font-bold РЕАКТИВНЫЙ АНГЛИЙСКИЙ
+							.flex.flex-wrap.justify-left(class="md:w-auto w-full")
+								i.fas.fa-star.text-orange.mr-1
+								i.fas.fa-star.text-orange.mr-1
+								i.fas.fa-star.text-orange.mr-1
+								i.fas.fa-star.text-orange.mr-1
+								i.fas.fa-star-half-alt.text-orange.mr-1
+						p.text-4.font-light.text-grey-dark.mb-4.overflow-hidden(class="xl:h-24 md:h-12 h-12") Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor mollis tortor, a tempor quam facilisis vitae. Nam in posuere augue. Morbi sit amet augue sceler isque, iaculis diam a, egestas est. lor sit amet, consectetur adipiscing elit. Etiam porttitor mollis tortor, a tempor quam facilisis vitae. Nam in posuere augue. Morbi sit amet augue sceler isque, iaculis diam a, egestas est. lor sit amet, consectetur adipiscing elit. Etiam porttitor mollis tortor, a tempor quam facilisis vitae. Nam in posuere augue. Morbi sit amet augue sceler isque, iaculis diam a, egestas est.
+						.flex.flex-wrap.border-grey-light.border-solid.border.rounded.mb-4(class="w-full md:w-full xl:w-4/5")
+							.py-3.border-r.border-grey-light.border-solid.bg-grey-lighter(class="w-full text-left md:w-1/3")
+								p.text-4.font-bold.pl-1(class="md:text-left xl:text-center text-left") Raised:  
+									span.text-grey-dark.font-normal(class="md:block  xl:inline-block")  14300 RUB 
+							.py-3.border-r.border-grey-light.border-solid(class="w-full text-left md:w-1/3")
+								p.text-4.font-bold.pl-1(class="md:text-left xl:text-center text-left") Share Price:  
+									span.text-grey-dark.font-normal(class="md:block  xl:inline-block")   100 RUB 
+							.py-3.border-r.border-grey-light.border-solid.bg-grey-lighter(class="w-full text-left md:w-1/3")
+								p.text-4.font-bold.pl-1(class="md:text-left xl:text-center text-left")
+									i.icon-progect-user.mr-2
+									span.text-grey-dark.font-normal(class="md:block  xl:inline-block")   9  investors
+						.flex.flex-wrap.justify-between.items-center(class="w-full md:w-full xl:w-4/5")
+							.h-6.relative(class="w-1/2 md:w-1/2 w-full md:mb-0 mb-4")
+								.h-full.border.rounded-lg.border-solid.border-grey.bg-grey-lighter.pt-px.pl-px.pr-px.pb-px.relative
+									.h-full.rounded-lg.border-solid.bg-grey-lighter.liner(style="width: 10.36%;")
+									span.absolute.pin-r.text-2.pin-t.pr-2.font-medium.text-grey 10.36 %
+							.flex.flex-wrap.justify-between(class="w-2/5 md:w-2/5 w-full")
+								a.block.py-4.rounded.leading-normal.uppercase.text-center.font-bold.bg-blue.text-white.whitespace-no-wrap.no-underline(class="hover:bg-blue-light w-48/100", href="#")
+									.fas.fa-heart.mr-2
+									| 414
+								a.block.py-4.rounded.leading-normal.uppercase.text-center.font-bold.bg-orange.text-white.whitespace-no-wrap.no-underline(class="hover:bg-orange-light w-48/100", href="#") 
+									.fas.fa-thumbs-up.mr-2
+									| Vote
+				.flex.flex-wrap.justify-between.shadow-md.p-px.bg-grey-lighter.mb-8
+					.relative(class="w-full md:w-30/100 h-48 md:h-auto")
+						img.pin.absolute.m-auto(src="img/progect-img.png")
+						.star.text-4.text-white.text-center.bg-green.pt-1.pb-1.font-bold.rounded-sm.absolute 4.5
+					.bg-white.p-4(class="w-full md:w-70/100")
+						.flex.flex-wrap.items-center
+							h4.mr-2.text-6.font-bold РЕАКТИВНЫЙ АНГЛИЙСКИЙ
+							.flex.flex-wrap.justify-left(class="md:w-auto w-full")
+								i.fas.fa-star.text-orange.mr-1
+								i.fas.fa-star.text-orange.mr-1
+								i.fas.fa-star.text-orange.mr-1
+								i.fas.fa-star.text-orange.mr-1
+								i.fas.fa-star-half-alt.text-orange.mr-1
+						p.text-4.font-light.text-grey-dark.mb-4.overflow-hidden(class="xl:h-24 md:h-12 h-12") Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porttitor mollis tortor, a tempor quam facilisis vitae. Nam in posuere augue. Morbi sit amet augue sceler isque, iaculis diam a, egestas est. lor sit amet, consectetur adipiscing elit. Etiam porttitor mollis tortor, a tempor quam facilisis vitae. Nam in posuere augue. Morbi sit amet augue sceler isque, iaculis diam a, egestas est. lor sit amet, consectetur adipiscing elit. Etiam porttitor mollis tortor, a tempor quam facilisis vitae. Nam in posuere augue. Morbi sit amet augue sceler isque, iaculis diam a, egestas est.
+						.flex.flex-wrap.border-grey-light.border-solid.border.rounded.mb-4(class="w-full md:w-full xl:w-4/5")
+							.py-3.border-r.border-grey-light.border-solid.bg-grey-lighter(class="w-full text-left md:w-1/3")
+								p.text-4.font-bold.pl-1(class="md:text-left xl:text-center text-left") Raised:  
+									span.text-grey-dark.font-normal(class="md:block  xl:inline-block")  14300 RUB 
+							.py-3.border-r.border-grey-light.border-solid(class="w-full text-left md:w-1/3")
+								p.text-4.font-bold.pl-1(class="md:text-left xl:text-center text-left") Share Price:  
+									span.text-grey-dark.font-normal(class="md:block  xl:inline-block")   100 RUB 
+							.py-3.border-r.border-grey-light.border-solid.bg-grey-lighter(class="w-full text-left md:w-1/3")
+								p.text-4.font-bold.pl-1(class="md:text-left xl:text-center text-left")
+									i.icon-progect-user.mr-2
+									span.text-grey-dark.font-normal(class="md:block  xl:inline-block")   9  investors
+						.flex.flex-wrap.justify-between.items-center(class="w-full md:w-full xl:w-4/5")
+							.h-6.relative(class="w-1/2 md:w-1/2 w-full md:mb-0 mb-4")
+								.h-full.border.rounded-lg.border-solid.border-grey.bg-grey-lighter.pt-px.pl-px.pr-px.pb-px.relative
+									.h-full.rounded-lg.border-solid.bg-grey-lighter.liner(style="width: 100%;")
+									span.absolute.pin-r.text-2.pin-t.pr-2.font-medium.text-white.w-full.text-center 100 %
+							.block(class="w-2/5 md:w-2/5 w-full")
+								a.block.py-4.rounded.leading-normal.uppercase.text-center.font-bold.bg-blue.text-white.whitespace-no-wrap.no-underline(class="hover:bg-blue-light", href="#") Invest
+				.flex.flex-wrap.justify-center
+					a.mx-2.text-grey.flex-wrap.flex.items-center.content-center.self-center.justify-center.border.block.border-grey.rounded.w-8.h-8.no-underline(href="#", class="hover:border-blue hover:text-blue") 
+						i.fas.fa-angle-left
+					a.mx-2.text-white.flex-wrap.flex.items-center.content-center.self-center.justify-center.border.block.border-green.rounded.w-8.h-8.no-underline.bg-green(href="#") 1
+					a.mx-2.text-grey.flex-wrap.flex.items-center.content-center.self-center.justify-center.border.block.border-grey.rounded.w-8.h-8.no-underline(href="#", class="hover:border-blue hover:text-blue")  2
+					a.mx-2.text-grey.flex-wrap.flex.items-center.content-center.self-center.justify-center.border.block.border-grey.rounded.w-8.h-8.no-underline(href="#", class="hover:border-blue hover:text-blue") 3
+					a.mx-2.text-grey.flex-wrap.flex.items-center.content-center.self-center.justify-center.border.block.border-grey.rounded.w-8.h-8.no-underline(href="#", class="hover:border-blue hover:text-blue") 4
+					a.mx-2.text-grey.flex-wrap.flex.items-center.content-center.self-center.justify-center.border.block.border-grey.rounded.w-8.h-8.no-underline(href="#", class="hover:border-blue hover:text-blue") 
+						i.fas.fa-angle-right
+								
 
 
 

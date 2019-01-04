@@ -17,30 +17,30 @@
 </head>
 <body>
 	<div id="app">
-		include ../layout/header-news.html
-		.bg-grey-light.mb-12
+		include ../layout/header-news.html 
+		.bg-grey-lighter.mb-12
 			.container
-				.flex.flex-wrap.justify-between.pt-1.mb-12(class="md:w-3/4 w-full" , style="margin: 0 auto;")
-					.news-filter-active.news-filter.border-grey.relative.text-center.cursor-pointer.border-b-2(class="w-1/4")
-						.block.bg-grey-light.pb-4.z-10.relative
+				.flex.flex-wrap.justify-between.mb-12.pt-4(class="md:w-3/4 w-full" , style="margin: 0 auto;")
+					.news-filter-active.news-filter.border-grey-light.relative.text-center.cursor-pointer.border-b-2(class="w-1/4")
+						.block.bg-grey-lighter.pb-4.z-10.relative.border-solid.border-r.border-grey-light
 							i.fas.fa-th.text-9.mb-1.text-grey
 							p.text-center.text-grey.font-medium All
 						.news-filter-tr.hidden.absolute.center-x.w-6.h-6.z-1(style="bottom: -0.8rem;") 
 							.news-filter-tr-tr.absolute.pin.bg-green.rotate-45
-					.news-filter.border-grey.relative.text-center.cursor-pointer.border-b-2(class="w-1/4")
-						.block.bg-grey-light.pb-4.z-10.relative
+					.news-filter.border-grey-light.relative.text-center.cursor-pointer.border-b-2(class="w-1/4")
+						.block.bg-grey-lighter.pb-4.z-10.relative.border-solid.border-r.border-grey-light
 							i.fab.fa-stripe-s.text-9.mb-1.text-grey 
 							p.text-center.text-grey.font-medium Simex
 						.news-filter-tr.hidden.absolute.center-x.w-6.h-6.z-1(style="bottom: -0.8rem;") 
 							.news-filter-tr-tr.absolute.pin.bg-green.rotate-45
-					.news-filter.border-grey.relative.text-center.cursor-pointer.border-b-2(class="w-1/4")
-						.block.bg-grey-light.pb-4.z-10.relative
+					.news-filter.border-grey-light.relative.text-center.cursor-pointer.border-b-2(class="w-1/4")
+						.block.bg-grey-lighter.pb-4.z-10.relative.border-solid.border-r.border-grey-light
 							i.fas.fa-star.text-9.mb-1.text-grey 
 							p.text-center.text-grey.font-medium Top
 						.news-filter-tr.hidden.absolute.center-x.w-6.h-6.z-1(style="bottom: -0.8rem;") 
 							.news-filter-tr-tr.absolute.pin.bg-green.rotate-45
-					.news-filter.border-grey.relative.text-center.cursor-pointer.border-b-2(class="w-1/4")
-						.block.bg-grey-light.pb-4.z-10.relative
+					.news-filter.border-grey-light.relative.text-center.cursor-pointer.border-b-2(class="w-1/4")
+						.block.bg-grey-lighter.pb-4.z-10.relative
 							i.fas.fa-bookmark.text-9.mb-1.text-grey 
 							p.text-center.text-grey.font-medium Featured
 						.news-filter-tr.hidden.absolute.center-x.w-6.h-6.z-1(style="bottom: -0.8rem;") 
@@ -48,7 +48,7 @@
 		.bg-white.pb-12
 			.container
 				.flex.flex-wrap.justify-between
-					.news-item.rounded.shadow-md.mb-6(class="lg:w-3/10 md:w-48/100 sm:w-full") 
+					.news-item.rounded.shadow-md.mb-6(class="xl:w-3/10 md:w-48/100 w-full") 
 						a.no-underline(href='#') 
 							.relative 
 								img.w-full(src="img/news-img.jpg")
@@ -66,7 +66,7 @@
 								h3.text-center.text-6.text-black.overflow-hidden(style="max-height: 66px;") CRYPTO LADY FORUM
 								p.text-grey.text-center.overflow-hidden(style="max-height: 78px; ") Who and what is it for and whether or not you should attend the next one. Lorem ipsum dolor sit amet.
 								span.py-2.px-6.border.rounded.border-grey.text-grey.absolute(style="bottom: 25px; margin-left: -65px; left: 50%;") Learn More
-					.news-item.rounded.shadow-md.mb-6(class="lg:w-3/10 md:w-48/100 sm:w-full")    
+					.news-item.rounded.shadow-md.mb-6(class="xl:w-3/10 md:w-48/100 w-full") 
 						a.no-underline(href='#') 
 							.relative 
 								img.w-full(src="img/news-img.jpg")
@@ -84,7 +84,7 @@
 								h3.text-center.text-6.text-black.overflow-hidden(style="max-height: 66px;") CRYPTO LADY FORUM
 								p.text-grey.text-center.overflow-hidden(style="max-height: 78px; ") Who and what is it for and whether or not you should attend the next one. Lorem ipsum dolor sit amet.
 								span.py-2.px-6.border.rounded.border-grey.text-grey.absolute(style="bottom: 25px; margin-left: -65px; left: 50%;") Learn More
-					.news-item.rounded.shadow-md.mb-6(class="lg:w-3/10 md:w-48/100 sm:w-full") 
+					.news-item.rounded.shadow-md.mb-6(class="xl:w-3/10 md:w-48/100 w-full") 
 						a.no-underline(href='#') 
 							.relative 
 								img.w-full(src="img/news-img.jpg")
@@ -102,7 +102,7 @@
 								h3.text-center.text-6.text-black.overflow-hidden(style="max-height: 66px;") CRYPTO LADY FORUM
 								p.text-grey.text-center.overflow-hidden(style="max-height: 78px; ") Who and what is it for and whether or not you should attend the next one. Lorem ipsum dolor sit amet.
 								span.py-2.px-6.border.rounded.border-grey.text-grey.absolute(style="bottom: 25px; margin-left: -65px; left: 50%;") Learn More
-					.news-item.rounded.shadow-md.mb-6(class="lg:w-3/10 md:w-48/100 sm:w-full")  
+					.news-item.rounded.shadow-md.mb-6(class="xl:w-3/10 md:w-48/100 w-full") 
 						a.no-underline(href='#') 
 							.relative 
 								img.w-full(src="img/news-img.jpg")
@@ -120,7 +120,7 @@
 								h3.text-center.text-6.text-black.overflow-hidden(style="max-height: 66px;") CRYPTO LADY FORUM
 								p.text-grey.text-center.overflow-hidden(style="max-height: 78px; ") Who and what is it for and whether or not you should attend the next one. Lorem ipsum dolor sit amet.
 								span.py-2.px-6.border.rounded.border-grey.text-grey.absolute(style="bottom: 25px; margin-left: -65px; left: 50%;") Learn More
-					.news-item.rounded.shadow-md.mb-6(class="lg:w-3/10 md:w-48/100 sm:w-full")    
+					.news-item.rounded.shadow-md.mb-6(class="xl:w-3/10 md:w-48/100 w-full") 
 						a.no-underline(href='#') 
 							.relative 
 								img.w-full(src="img/news-img.jpg")
@@ -138,7 +138,7 @@
 								h3.text-center.text-6.text-black.overflow-hidden(style="max-height: 66px;") CRYPTO LADY FORUM
 								p.text-grey.text-center.overflow-hidden(style="max-height: 78px; ") Who and what is it for and whether or not you should attend the next one. Lorem ipsum dolor sit amet.
 								span.py-2.px-6.border.rounded.border-grey.text-grey.absolute(style="bottom: 25px; margin-left: -65px; left: 50%;") Learn More
-					.news-item.rounded.shadow-md.mb-6(class="lg:w-3/10 md:w-48/100 sm:w-full")
+					.news-item.rounded.shadow-md.mb-6(class="xl:w-3/10 md:w-48/100 w-full") 
 						a.no-underline(href='#') 
 							.relative 
 								img.w-full(src="img/news-img.jpg")
@@ -183,7 +183,7 @@
 			.container
 				h3.text-8.text-center.uppercase.mb-8 featured news
 				.flex.flex-wrap.justify-between
-					.news-item.rounded.shadow-md.mb-6(class="lg:w-3/10 md:w-48/100 sm:w-full") 
+					.news-item.rounded.shadow-md.mb-6(class="xl:w-3/10 md:w-48/100 w-full") 
 						a.no-underline(href='#') 
 							.relative 
 								img.w-full(src="img/news-img.jpg")
@@ -201,7 +201,7 @@
 								h3.text-center.text-6.text-black.overflow-hidden(style="max-height: 66px;") CRYPTO LADY FORUM
 								p.text-grey.text-center.overflow-hidden(style="max-height: 78px; ") Who and what is it for and whether or not you should attend the next one. Lorem ipsum dolor sit amet.
 								span.py-2.px-6.border.rounded.border-grey.text-grey.absolute(style="bottom: 25px; margin-left: -65px; left: 50%;") Learn More
-					.news-item.rounded.shadow-md.mb-6(class="lg:w-3/10 md:w-48/100 sm:w-full")    
+					.news-item.rounded.shadow-md.mb-6(class="xl:w-3/10 md:w-48/100 w-full") 
 						a.no-underline(href='#') 
 							.relative 
 								img.w-full(src="img/news-img.jpg")
@@ -219,7 +219,7 @@
 								h3.text-center.text-6.text-black.overflow-hidden(style="max-height: 66px;") CRYPTO LADY FORUM
 								p.text-grey.text-center.overflow-hidden(style="max-height: 78px; ") Who and what is it for and whether or not you should attend the next one. Lorem ipsum dolor sit amet.
 								span.py-2.px-6.border.rounded.border-grey.text-grey.absolute(style="bottom: 25px; margin-left: -65px; left: 50%;") Learn More
-					.news-item.rounded.shadow-md.mb-6(class="lg:w-3/10 md:w-48/100 sm:w-full") 
+					.news-item.rounded.shadow-md.mb-6(class="xl:w-3/10 md:w-48/100 w-full") 
 						a.no-underline(href='#') 
 							.relative 
 								img.w-full(src="img/news-img.jpg")
@@ -237,7 +237,7 @@
 								h3.text-center.text-6.text-black.overflow-hidden(style="max-height: 66px;") CRYPTO LADY FORUM
 								p.text-grey.text-center.overflow-hidden(style="max-height: 78px; ") Who and what is it for and whether or not you should attend the next one. Lorem ipsum dolor sit amet.
 								span.py-2.px-6.border.rounded.border-grey.text-grey.absolute(style="bottom: 25px; margin-left: -65px; left: 50%;") Learn More
-					.news-item.rounded.shadow-md.mb-6(class="lg:w-3/10 md:w-48/100 sm:w-full")  
+					.news-item.rounded.shadow-md.mb-6(class="xl:w-3/10 md:w-48/100 w-full") 
 						a.no-underline(href='#') 
 							.relative 
 								img.w-full(src="img/news-img.jpg")
@@ -255,7 +255,7 @@
 								h3.text-center.text-6.text-black.overflow-hidden(style="max-height: 66px;") CRYPTO LADY FORUM
 								p.text-grey.text-center.overflow-hidden(style="max-height: 78px; ") Who and what is it for and whether or not you should attend the next one. Lorem ipsum dolor sit amet.
 								span.py-2.px-6.border.rounded.border-grey.text-grey.absolute(style="bottom: 25px; margin-left: -65px; left: 50%;") Learn More
-					.news-item.rounded.shadow-md.mb-6(class="lg:w-3/10 md:w-48/100 sm:w-full")    
+					.news-item.rounded.shadow-md.mb-6(class="xl:w-3/10 md:w-48/100 w-full") 
 						a.no-underline(href='#') 
 							.relative 
 								img.w-full(src="img/news-img.jpg")
@@ -273,7 +273,7 @@
 								h3.text-center.text-6.text-black.overflow-hidden(style="max-height: 66px;") CRYPTO LADY FORUM
 								p.text-grey.text-center.overflow-hidden(style="max-height: 78px; ") Who and what is it for and whether or not you should attend the next one. Lorem ipsum dolor sit amet.
 								span.py-2.px-6.border.rounded.border-grey.text-grey.absolute(style="bottom: 25px; margin-left: -65px; left: 50%;") Learn More
-					.news-item.rounded.shadow-md.mb-6(class="lg:w-3/10 md:w-48/100 sm:w-full")
+					.news-item.rounded.shadow-md.mb-6(class="xl:w-3/10 md:w-48/100 w-full") 
 						a.no-underline(href='#') 
 							.relative 
 								img.w-full(src="img/news-img.jpg")
