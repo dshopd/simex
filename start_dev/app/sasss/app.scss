@@ -112,12 +112,7 @@
   h1 {
         @apply font-bold uppercase text-8 pb-6  border-grey-light border-b mb-6;
     }
-    a {
-      @apply text-4 text-blue no-underline;
-      &:hover {
-        @apply underline; 
-      }
-    }
+
     &__linck {
       a {
         @apply mb-2 block;

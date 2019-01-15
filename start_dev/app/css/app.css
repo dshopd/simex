@@ -7117,16 +7117,6 @@ body {
   margin-bottom: 1.5rem;
 }
 
-.progect-one-text a {
-  font-size: 1rem;
-  color: #069;
-  text-decoration: none;
-}
-
-.progect-one-text a:hover {
-  text-decoration: underline;
-}
-
 .progect-one-text__linck a {
   margin-bottom: .5rem;
   display: block;
